@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">JhoanMovieApp</string>
+    <string name="title">Title</string>
+    <string name="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Popular</string>
+    <string name="tab_text_2">Top Rated</string>
+    <string name="tab_text_3">Upcoming</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
