@@ -43,6 +43,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MostViewHolder>() {
             Glide.with(holder.itemView.context).load(imageUrl)
                 .placeholder(R.drawable.ic_launcher_background).into(holder.binding.movieImg)
         }
+        holder.binding.deccriptionTv.text = movie.overview
 
         holder.itemView.setOnClickListener {
             var intent = Intent(it.context, DetailMovieActivity::class.java)
