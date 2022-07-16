@@ -24,4 +24,6 @@
     <string name="overview">Overview</string>
     <string name="traier">Trailer</string>
     <string name="action_settings">Setting</string>
+    <string name="share">Share</string>
+    <string name="bookmark">Bookmark</string>
 </resources>

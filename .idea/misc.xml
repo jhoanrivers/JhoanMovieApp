@@ -8,7 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_bookmarks_24.xml" value="0.1595" />
         <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_share_24.xml" value="0.124" />
-        <entry key="app/src/main/res/layout/activity_detail_movie.xml" value="0.27785034179687507" />
+        <entry key="app/src/main/res/layout/activity_detail_movie.xml" value="0.29389648437500004" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_most_popular_view.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/favorit_fragment.xml" value="0.11302083333333333" />
@@ -17,6 +17,7 @@
         <entry key="app/src/main/res/layout/fragment_popular.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/item_movie.xml" value="0.20033874511718752" />
         <entry key="app/src/main/res/layout/top_rated_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/detail_menu.xml" value="0.24634910116390307" />
         <entry key="app/src/main/res/menu/menu_detail.xml" value="0.11302083333333333" />
       </map>
     </option>
