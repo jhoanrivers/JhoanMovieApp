@@ -30,4 +30,16 @@
 
     </style>
 
+
+    <style name="Theme.JhoanMovieApp.Detail" parent="Theme.JhoanMovieApp.NoActionBar">
+        <item name="colorPrimary">#0C80C1</item>
+        <item name="colorPrimaryVariant">#2DACCC</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.JhoanMovieApp">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
 </resources>
