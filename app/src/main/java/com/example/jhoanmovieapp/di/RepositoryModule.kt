@@ -1,19 +1,26 @@
-package com.example.jhoanmovieapp.di
-
-import com.example.jhoanmovieapp.network.repository.MovieRepository
-import com.example.jhoanmovieapp.network.repository.MovieRepositoryImp
-import dagger.Binds
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
-
-
-@Module(includes = [NetworkModule::class])
-@InstallIn(SingletonComponent::class)
-abstract class RepositoryModule {
-
-    @Binds
-    abstract fun provideRepository(movieRepository: MovieRepositoryImp) : MovieRepository
-
-
-}
+//package com.example.jhoanmovieapp.di
+//
+//import com.example.jhoanmovieapp.network.apiclient.ApiClient
+//import com.example.jhoanmovieapp.network.repository.MovieRepository
+//import com.example.jhoanmovieapp.network.repository.MovieRepositoryImp
+//import com.example.jhoanmovieapp.network.repository.MovieRepositoryImp2
+//import dagger.Binds
+//import dagger.Module
+//import dagger.Provides
+//import dagger.hilt.InstallIn
+//import dagger.hilt.components.SingletonComponent
+//import javax.inject.Inject
+//
+//
+////@Module
+////@InstallIn(SingletonComponent::class)
+////class RepositoryModule @Inject constructor(val apiClient: ApiClient) {
+////
+////
+////    @Provides
+////    fun provideRepository(): MovieRepositoryImp2 {
+////        return apiClient.
+////    }
+////
+////
+////}

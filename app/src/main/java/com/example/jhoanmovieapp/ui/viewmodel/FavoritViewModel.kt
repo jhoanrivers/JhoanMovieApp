@@ -5,7 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.jhoanmovie.model.APIResponse
 import com.example.jhoanmovie.model.Movie
-import com.example.jhoanmovieapp.network.repository.MovieRepository
+import com.example.jhoanmovieapp.network.repository.MovieRepositoryImp2
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
 import retrofit2.Callback
@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class FavoritViewModel @Inject constructor(val repository: MovieRepository) : ViewModel() {
+class FavoritViewModel @Inject constructor(val movieRepositoryImp2: MovieRepositoryImp2) : ViewModel() {
 
 
     var favoritMovie = MutableLiveData<List<Movie>>()
@@ -25,7 +25,7 @@ class FavoritViewModel @Inject constructor(val repository: MovieRepository) : Vi
 
     fun getFavoritMovie () {
         isLoading.postValue(true)
-        repository.getUpcomingMovie().enqueue(object : Callback<APIResponse> {
+        movieRepositoryImp2.getUpcomingListMovie().enqueue(object : Callback<APIResponse> {
             override fun onResponse(call: Call<APIResponse>, response: Response<APIResponse>) {
                 isLoading.postValue(false)
                 favoritMovie.postValue(response.body()!!.results!!)

@@ -4,20 +4,24 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.jhoanmovie.model.Movie
 import com.example.jhoanmovieapp.R
 import com.example.jhoanmovieapp.databinding.ActivityDetailMovieBinding
+import com.example.jhoanmovieapp.ui.viewmodel.DetailMovieViewModel
 import com.example.jhoanmovieapp.util.AppConstant
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.AppBarLayout.OnOffsetChangedListener
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class DetailMovieActivity : AppCompatActivity() {
 
     var TAG = "DetailMovieActivity"
 
+    private val viewModel : DetailMovieViewModel by viewModels()
     lateinit var binding: ActivityDetailMovieBinding
     lateinit var movie: Movie
 

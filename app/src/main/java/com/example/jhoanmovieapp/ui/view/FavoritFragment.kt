@@ -13,6 +13,7 @@ import com.example.jhoanmovieapp.databinding.FavoritFragmentBinding
 import com.example.jhoanmovieapp.ui.adapter.MovieAdapter
 import com.example.jhoanmovieapp.ui.viewmodel.FavoritViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
 
 @AndroidEntryPoint
 class FavoritFragment : Fragment() {

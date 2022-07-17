@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.jhoanmovie.model.APIResponse
 import com.example.jhoanmovie.model.Movie
-import com.example.jhoanmovieapp.network.repository.MovieRepository
+import com.example.jhoanmovieapp.network.repository.MovieRepositoryImp2
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.HiltViewModel
 import retrofit2.Call
@@ -18,7 +18,7 @@ import javax.inject.Inject
 
 
 @HiltViewModel
-class PopularViewModel @Inject constructor(val repository: MovieRepository): ViewModel() {
+class PopularViewModel @Inject constructor(private val movieRepositoryImp2: MovieRepositoryImp2): ViewModel() {
 
     var movieList  = MutableLiveData<List<Movie>>()
     var errormessage = MutableLiveData<String>()
@@ -28,7 +28,7 @@ class PopularViewModel @Inject constructor(val repository: MovieRepository): Vie
 
     fun getListMovie() {
         isLoading.postValue(true)
-        repository.getMostPopularMovie().enqueue(object : Callback<APIResponse> {
+        movieRepositoryImp2.getPopularListMovie().enqueue(object : Callback<APIResponse> {
             override fun onResponse(call: Call<APIResponse>, response: Response<APIResponse>) {
                 isLoading.postValue(false)
                 movieList.postValue(response.body()!!.results!!)
